@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container-fluid {
+    padding-top: 0;
+}
+
+
+/*-------MEDIA, OVERLAY AND TEXT----------*/
+
+.media {
+    padding: 0;
+    height: 850px;
+    width: 100%;
+    background-image: url(../img/fastFood1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 70px;
+}
+
+.media2 {
+    padding: 0;
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/fastFood1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.media3 {
+    padding: 0;
+    height: 300px;
+    width: 100%;
+    background-image: url(../images/subscribe.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.overlay {
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    height: 850px;
+    background: black;
+    background: rgba(0, 0, 0, 0.0);
+}
+
+.header {
+    margin-top: 3%;
+    text-align: center;
+    font-family: 'Handlee', Open Sans;
+    color: white;
+    font-size: 60px;
+}
+
+.logo {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.men {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: transparent;
+    height: 50px;
+    width: 75px;
+}
+
+
+/*-------END MEDIA, OVERLAY AND TEXT----------*/
+
+.bg-1 {
+    padding: 0;
+}
+
+.bg-10 {
+    padding: 0;
+}
+
+.bg-00 {
+    background-color: #F15A29;
+}
+
+.happy {
+    height: 119px;
+    width: 300px;
+}
+
+.overlay-mini {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.0);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.bg-1:hover .overlay-mini {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(250, 250, 250, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.bg-1:hover .text {
+    color: #000000;
+}
+
+.text {
+    color: white;
+    font-size: 40px;
+    font-family: 'Handlee', Open Sans;
+    padding: 16px 32px;
+    white-space: nowrap;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.textt {
+    text-align: center;
+    margin-top: 2%;
+    color: #ffffff;
+}
+
+#text1 {
+    padding: 5%;
+    text-align: left;
+}
+
+#text2 {
+    padding: 5%;
+    text-align: right;
+}
+
+#text3 {
+    padding: 5%;
+    text-align: center;
+}
+
+.fasts {
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 30%;
+    margin-top: 10%;
+    padding: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*-----Clickable menu------*/
+
+.overlayMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F15A29;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlayMenu a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlayMenu a:hover,
+.overlayMenu a:focus {
+    color: #f1f1f1;
+}
+
+.overlayMenu .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlayMenu a {
+        font-size: 20px
+    }
+    .overlayMenu .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/*---BUTTONS-----*/
+
+.button {
+    border: none;
+    color: #F15A29;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button1 {
+    background-color: white;
+    color: #F15A29;
+    border: 2px solid #F15A29;
+}
+
+.box {
+    padding: 0;
+    height: 500;
+    width: 500px;
+    margin: 100% auto;
+    display: flex;
+    background-image: url(../img/Gyro_sandwich.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 70px;
+    
+}
+/* mm */
+
+.body2{
+padding: 0;
+height:120px;
+width: 100%;
+float: left;
+box-sizing: border-box;
+box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+
+display: flex;
+background-image: url(../img/Drinks02.jpeg);
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+margin-top: 70px;
+
+
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+.card{
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+
+
+}
+.card:hover{
+    transform: translateY(20px);
+
+}
+.card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(0,176,155,0.5) ,rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+
+}
+.card:hover::before{
+    opacity: 1;
+
+}
+.card img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left:0;
+
+}
+.card.info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+.card:hover.info{
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+.card.info h1{
+    margin: 0;
+
+}
+.card.info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.card.info .btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+
+}
+.card.info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+
+}
+
+
